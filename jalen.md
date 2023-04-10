@@ -15,4 +15,5 @@
     2. Click on Global Password Change Tool to reset your password. 
 
         ![image](pass2.png)
-
+        
+    3. To use ssh, open a new terminal in VS Code (CTRL + SHIFT + ` or Terminal > New Terminal)
