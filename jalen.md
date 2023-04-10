@@ -1,7 +1,9 @@
 # Remote Access and File System
 1. Downloading VS Code
 
-    Download VS Code [here](https://code.visualstudio.com/download). Follow the download instructions and after it is installed, open VS Code. It should look like this when you first open it. If you are instead using a computer in the lab, you do not need to install VS Code. It should be installed already.
+    Download VS Code [here](https://code.visualstudio.com/download). Follow the download instructions and after it is installed, open VS Code. 
+    ![image](Screenshot 2023-04-10 155333.png)
+    It should look like this when you first open it. If you are instead using a computer in the lab, it should be installed already. 
 
 2. Remotely Connecting 
     
