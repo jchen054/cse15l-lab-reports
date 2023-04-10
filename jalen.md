@@ -16,4 +16,16 @@
 
         ![image](pass2.png)
         
-    3. To use ssh, open a new terminal in VS Code (CTRL + SHIFT + ` or Terminal > New Terminal)
+    3. To use ssh, open a new terminal in VS Code (CTRL + SHIFT + ` or Terminal > New Terminal). Input the following command into the terminal:
+        
+       $ ssh cs15lsp23__@ieng6.ucsd.edu
+       
+       In the blanks, fill in the letters corresponding with your course account. It should be in your username in the screenshot from step 2. After inputting the command, you will likely see the message appear below:
+       
+        The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't be established.
+RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? 
+       
+       Enter yes and input the password that you reset earlier. Note that you cannot actually see your password in the terminal for security reasons. If you get an error message or cannot login, first make sure you entered your password and ssh command correctly. It takes a while for the server to update so you may have to wait a few minutes for it to accept your new password. 
+
+
