@@ -31,7 +31,7 @@ Are you sure you want to continue connecting (yes/no/[fingerprint])?
     4. If you have successfully connected, you should see the screen below. ![image](login.png) 
 3. Trying Commands
     
-    Here are some commands you can enter after ssh-ing:  cd, ls, pwd, mkdir, and cp.
+    Here are some commands you can enter after ssh-ing:  cd, ls, pwd, mkdir, and cp. Here is an example of what one command input looks like: ![image](commands.png)
     
     To log out use either CTRL + D or **exit**.
 
