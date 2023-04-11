@@ -12,13 +12,13 @@
         
         ![image](pass1.png)
      
-    2. Click on Global Password Change Tool to reset your password. 
+    2. Click on Global Password Change Tool and follow the on screen directions to reset your password. 
 
         ![image](pass2.png)
         
     3. To use ssh, open a new terminal in VS Code (CTRL + SHIFT + ` or Terminal > New Terminal). Input the following command into the terminal:
         
-       $ ssh cs15lsp23__@ieng6.ucsd.edu
+           $ ssh cs15lsp23__@ieng6.ucsd.edu
        
        In the blanks, fill in the letters corresponding with your course account. It should be in your username in the screenshot from step 2. After inputting the command, you will likely see the message appear below:
        
@@ -27,5 +27,11 @@ RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
        
        Enter yes and input the password that you reset earlier. Note that you cannot actually see your password in the terminal for security reasons. If you get an error message or cannot login, first make sure you entered your password and ssh command correctly. It takes a while for the server to update so you may have to wait a few minutes for it to accept your new password. 
+    
+    4. If you have successfully connected, you should see the screen below. ![image](login.png) 
+3. Trying Commands
+    
+    Here are some commands you can enter after ssh-ing:  cd, ls, pwd, mkdir, and cp
+    To log out use either CTRL + D or **exit**.
 
 
