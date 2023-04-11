@@ -26,7 +26,7 @@
 RSA key fingerprint is SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? 
        
-       Enter yes and input the password that you reset earlier. Note that you cannot actually see your password in the terminal for security reasons. If you get an error message or cannot login, first make sure you entered your password and ssh command correctly. It takes a while for the server to update so you may have to wait a few minutes for it to accept your new password. ![image](LOGIN2.PNG)
+       Enter yes and input the password that you reset earlier. Note that you cannot actually see your password in the terminal for security reasons. If you get an error message or cannot login, first make sure you entered your password and ssh command correctly. It takes a while for the server to update so you may have to wait a few minutes for it to accept your new password. ![image](LOGIN2.png)
     
     4. If you have successfully connected, you should see the screen below. ![image](login.png) 
 3. Trying Commands
