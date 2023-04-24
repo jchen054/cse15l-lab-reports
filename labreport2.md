@@ -69,6 +69,7 @@ The if-else statements reached the end and an error message was returned. Theref
         assertArrayEquals(new int[]{ 3 }, ArrayExamples.reverseInPlace(input1));
         assertArrayEquals(new int[] {4,3,2,1}, ArrayExamples.reverseInPlace(arr2)); 
       }
+   Output: ![failed](fail1.png)
 ### Passing Input
 	@Test 
 	public void testReverseInPlace() {
@@ -76,6 +77,7 @@ The if-else statements reached the end and an error message was returned. Theref
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
 	}
+Output: ![passed](pass2.png)
           
 ### Code with Bugs
     static void reverseInPlace(int[] arr) {
@@ -84,7 +86,7 @@ The if-else statements reached the end and an error message was returned. Theref
       }
     }
 
-### Fixed Code:
+### Fixed Code
     static int[] reverseInPlace(int[] arr) {
       for(int i = 0; i < arr.length/2; i += 1) {
         int temp = arr[i];
@@ -93,3 +95,4 @@ The if-else statements reached the end and an error message was returned. Theref
       }
         return arr;
     }
+The first bug is the incorrect return type. The original code had a void return type when it was supposed to return the reversed array. Secondly, the implementation to reverse the array is wrong too. It loops through the array and correctly replaces the first half of the array with the second half. Since the first half of the array is reversed, the original code replaces the second half with the first half of the array, effectively replacing the second half of the array with itself. The fixed code resolves this issue by only looping through one half of the array and switching the elements at the first and last index, the second index and second-to-last index, and so on. 
