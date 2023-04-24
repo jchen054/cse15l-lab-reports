@@ -95,6 +95,7 @@ Output: ![passed](pass2.png)
       }
         return arr;
     }
+
 The first bug is the incorrect return type. The original code had a void return type when it was supposed to return the reversed array. Secondly, the implementation to reverse the array is wrong too. It loops through the array and correctly replaces the first half of the array with the second half. Since the first half of the array is reversed, the original code replaces the second half with the first half of the array, effectively replacing the second half of the array with itself. The fixed code resolves this issue by only looping through one half of the array and switching the elements at the first and last index, the second index and second-to-last index, and so on. 
 
 ## Part 3
