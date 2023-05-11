@@ -27,7 +27,7 @@ Input:
 ```
 grep -v "," technical/biomed/1468-6708-3-1.txt 
  ```
- Output: 
+Output: 
  ```
  Introduction
         even though there is little evidence that overweight is
@@ -106,10 +106,10 @@ Output:
         // more lines redacted
   This command searches the provided .txt file for lines containing the pattern, "cell", and returns that line, along with one line before it and 2 lines after it. The -A command returns the specified amount of lines after the matching line, and the -B command returns the specified amount of lines before the matching line. 
   
-  Input:
+Input:
 
     grep -A 2 "cell" technical/biomed/1471-213X-1-3.txt
-  Output:
+Output:
    
         cells and a Schlemm's canal (SC). The aqueous percolates
         through channels or intertrabecular spaces in the TM before
@@ -121,11 +121,11 @@ Output:
         // more lines redacted
   If I just wanted to see the two lines after the lines matching the pattern, I could leave the -B command out. This command could be useful if context is important when you are searchinga file.
   This command could be especially in a scenario where you not only needed to find lines in a file matching a pattern but if the surrounding lines around the matching lines are also important.
-  ## Command 4: --exclude
-  Input:
+## Command 4: --exclude
+Input:
   
     grep -r "apple" --exclude-dir=biomed technical
-  Output:
+Output:
   
     technical/911report/chapter-8.txt:                grappled with reports alleging plots in Yemen and Italy, as well as a report about a
     technical/government/About_LSC/commission_report.txt:apples (4,428), vegetable harvesting (4,822), and fruit harvesting
@@ -138,12 +138,12 @@ Output:
     technical/plos/pmed.0010013.txt:        easier to grapple with a difficult, but ultimately soluble, basic science question than to
   This command recursively searches the technical directory for lines in files containing the pattern "apple." The exclude command caused grep not to search the provided directory, in this case the biomed directory. 
  
- Input:
+Input:
   
   
     grep -wr "dog" --exclude=a --exclude-dir=biomed technical
  
- Output:
+Output:
  ```
    technical/911report/chapter-13.3.txt:                testimony, Mar. 23, 2004. When "wag the dog" allegations were again raised during
    technical/911report/chapter-3.txt:            The failure of the strikes, the "wag the dog" slur, the intense partisanship of the   
