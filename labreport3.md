@@ -139,7 +139,8 @@ Output:
     technical/government/Gen_Account_Office/Testimony_cg00010t.txt:grapples with increasingly complex and contentious issues requiring  
     technical/government/Media/Law_Schools.txt:government post. Here is how to grapple "in the service of
     technical/plos/pmed.0010013.txt:        easier to grapple with a difficult, but ultimately soluble, basic science question than to
-  This command recursively searches the technical directory for lines in files containing the pattern "apple." The exclude command caused grep not to search the provided directory, in this case the biomed directory. 
+ 
+ This command recursively searches the technical directory for lines in files containing the pattern "apple." The exclude command caused grep not to search the provided directory, in this case the biomed directory. 
  
 Input:
   
