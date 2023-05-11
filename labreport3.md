@@ -97,16 +97,16 @@ grep -A 2 -B 1 "cell" technical/biomed/1471-213X-1-3.txt
 ```
 Output:
 ```
-        connective tissue covered by endothelial like trabecular
-        cells and a Schlemm's canal (SC). The aqueous percolates
-        through channels or intertrabecular spaces in the TM before
-        entering SC. The fluid collected by SC drains into aqueous
+connective tissue covered by endothelial like trabecular
+cells and a Schlemm's canal (SC). The aqueous percolates
+through channels or intertrabecular spaces in the TM before
+entering SC. The fluid collected by SC drains into aqueous
 
-        generally accepted as neural crest derived [ 8, 9]. Recent
-        cell grafting and cell labeling studies of craniofacial
-        morphogenesis in mouse embryos confirm a neural crest
-        derivation of the mammalian periocular mesenchyme [ 10].
-        // more lines redacted
+generally accepted as neural crest derived [ 8, 9]. Recent
+cell grafting and cell labeling studies of craniofacial
+morphogenesis in mouse embryos confirm a neural crest
+derivation of the mammalian periocular mesenchyme [ 10].
+// more lines redacted
 ```
 This command searches the provided .txt file for lines containing the pattern, "cell", and returns that line, along with one line before it and 2 lines after it. The -A command returns the specified amount of lines after the matching line, and the -B command returns the specified amount of lines before the matching line. 
   
@@ -116,15 +116,14 @@ grep -A 2 "cell" technical/biomed/1471-213X-1-3.txt
 ```
 Output:
 ```
-   
-        cells and a Schlemm's canal (SC). The aqueous percolates
-        through channels or intertrabecular spaces in the TM before
-        entering SC. The fluid collected by SC drains into aqueous
+cells and a Schlemm's canal (SC). The aqueous percolates
+through channels or intertrabecular spaces in the TM before
+entering SC. The fluid collected by SC drains into aqueous
 
-        cell grafting and cell labeling studies of craniofacial
-        morphogenesis in mouse embryos confirm a neural crest
-        derivation of the mammalian periocular mesenchyme [ 10].
-        // more lines redacted
+cell grafting and cell labeling studies of craniofacial
+morphogenesis in mouse embryos confirm a neural crest
+derivation of the mammalian periocular mesenchyme [ 10].
+// more lines redacted
 ```
 If I just wanted to see the two lines after the lines matching the pattern, I could leave the -B command out. This command could be useful if context is important when you are searchinga file.
 This command could be especially in a scenario where you not only needed to find lines in a file matching a pattern but if the surrounding lines around the matching lines are also important.
@@ -155,15 +154,15 @@ Input:
  
 Output:
  ```
-   technical/911report/chapter-13.3.txt:                testimony, Mar. 23, 2004. When "wag the dog" allegations were again raised during
-   technical/911report/chapter-3.txt:            The failure of the strikes, the "wag the dog" slur, the intense partisanship of the   
-   technical/government/Media/Abuse_penalties.txt:Fines the same for beating a dog in county
-   technical/government/Media/Abuse_penalties.txt:If you beat a dog in Schuylkill County, you'll probably get a
-   technical/government/Media/Attorney_gives_his_time.txt:"Someone's cat was bit by a dog, as I recall," he said.
-   technical/plos/journal.pbio.0020297.txt:              dog embraced so many unlike specimens of differing sizes and different forms; he was
-   technical/plos/journal.pbio.0020297.txt:              disturbed by the fact that a dog at three-fourteen (seen in profile) should have the
-   technical/plos/journal.pbio.0020297.txt:              same name as the dog at three-fifteen (seen from the front).…Without effort, he had
-   technical/plos/pmed.0020034.txt:        cat, and also to birch and dog. However, in the United States and New Zealand, the presence
+technical/911report/chapter-13.3.txt:                testimony, Mar. 23, 2004. When "wag the dog" allegations were again raised during
+technical/911report/chapter-3.txt:            The failure of the strikes, the "wag the dog" slur, the intense partisanship of the   
+technical/government/Media/Abuse_penalties.txt:Fines the same for beating a dog in county
+technical/government/Media/Abuse_penalties.txt:If you beat a dog in Schuylkill County, you'll probably get a
+technical/government/Media/Attorney_gives_his_time.txt:"Someone's cat was bit by a dog, as I recall," he said.
+technical/plos/journal.pbio.0020297.txt:              dog embraced so many unlike specimens of differing sizes and different forms; he was
+technical/plos/journal.pbio.0020297.txt:              disturbed by the fact that a dog at three-fourteen (seen in profile) should have the
+technical/plos/journal.pbio.0020297.txt:              same name as the dog at three-fifteen (seen from the front).…Without effort, he had
+technical/plos/pmed.0020034.txt:        cat, and also to birch and dog. However, in the United States and New Zealand, the presence
 ```
 The exclude command can also be used to exclude path files that matched a certain pattern. In this input, paths leading to a file that had the character a in it were excluded, as well as the biomed directory when performing the search. The command searched the technical directory, excluding the mentioned conditions, and returned all file lines that contained the whole word "dog," which is what the -w command does. 
 The --exclude command is useful if you are searching a directory that contains many others directories or files that are unrelated or irrelevant to the ones you need to find. 
