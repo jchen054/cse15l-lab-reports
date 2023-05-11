@@ -92,6 +92,7 @@ Output:
 Input:
 
     grep -A 2 -B 1 "cell" technical/biomed/1471-213X-1-3.txt
+
 Output:
 
         connective tissue covered by endothelial like trabecular
