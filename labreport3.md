@@ -121,6 +121,7 @@ Output:
         // more lines redacted
   If I just wanted to see the two lines after the lines matching the pattern, I could leave the -B command out. This command could be useful if context is important when you are searchinga file.
   This command could be especially in a scenario where you not only needed to find lines in a file matching a pattern but if the surrounding lines around the matching lines are also important.
+  
 ## Command 4: --exclude
 Input:
   
@@ -157,6 +158,7 @@ Output:
 ```
 The exclude command can also be used to exclude path files that matched a certain pattern. In this input, paths leading to a file that had the character a in it were excluded, as well as the biomed directory when performing the search. The command searched the technical directory, excluding the mentioned conditions, and returned all file lines that contained the whole word "dog," which is what the -w command does. 
 The --exclude command is useful if you are searching a directory that contains many others directories or files that are unrelated or irrelevant to the ones you need to find. 
+
 ## Sources 
 - [ChatGPT](https://chat.openai.com/)
 
