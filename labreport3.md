@@ -65,7 +65,7 @@ Input:
 ```
 grep -ilr  "bomb" technical/government 
  ```
- Output:
+Output:
  ```
 technical/government/Alcohol_Problems/DraftRecom-PDF.txt
 technical/government/Alcohol_Problems/Session3-PDF.txt
@@ -76,6 +76,7 @@ technical/government/Gen_Account_Office/May1998_ai98068.txt
 technical/government/Gen_Account_Office/pe1019.txt
 technical/government/Gen_Account_Office/Testimony_cg00010t.txt
 ```
+
 This command recursively performs a case-insensitive search in a directory and returns all the files that match the given pattern.
 
 Input:
@@ -85,8 +86,8 @@ Input:
 Output:
 
     The bombings in New York City in 1993 and in Oklahoma City in
-  Here is one the files that the directory search produced and the command performs a case-insensitive search of the word "bomb." It prints out all lines that match the pattern.
- The -i command is useful if you want to search for files that contain a certain keyword but you do not care about capitalization. 
+Here is one the files that the directory search produced and the command performs a case-insensitive search of the word "bomb." It prints out all lines that match the pattern.
+The -i command is useful if you want to search for files that contain a certain keyword but you do not care about capitalization. 
           
 ## Command 3: -A / -B
 Input:
@@ -105,7 +106,7 @@ Output:
         morphogenesis in mouse embryos confirm a neural crest
         derivation of the mammalian periocular mesenchyme [ 10].
         // more lines redacted
-  This command searches the provided .txt file for lines containing the pattern, "cell", and returns that line, along with one line before it and 2 lines after it. The -A command returns the specified amount of lines after the matching line, and the -B command returns the specified amount of lines before the matching line. 
+This command searches the provided .txt file for lines containing the pattern, "cell", and returns that line, along with one line before it and 2 lines after it. The -A command returns the specified amount of lines after the matching line, and the -B command returns the specified amount of lines before the matching line. 
   
 Input:
 
@@ -120,8 +121,8 @@ Output:
         morphogenesis in mouse embryos confirm a neural crest
         derivation of the mammalian periocular mesenchyme [ 10].
         // more lines redacted
-  If I just wanted to see the two lines after the lines matching the pattern, I could leave the -B command out. This command could be useful if context is important when you are searchinga file.
-  This command could be especially in a scenario where you not only needed to find lines in a file matching a pattern but if the surrounding lines around the matching lines are also important.
+If I just wanted to see the two lines after the lines matching the pattern, I could leave the -B command out. This command could be useful if context is important when you are searchinga file.
+This command could be especially in a scenario where you not only needed to find lines in a file matching a pattern but if the surrounding lines around the matching lines are also important.
   
 ## Command 4: --exclude
 Input:
