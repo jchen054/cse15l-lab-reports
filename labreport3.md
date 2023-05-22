@@ -172,5 +172,5 @@ The --exclude command is useful if you are searching a directory that contains m
 
     Prompts Used: "what are some ways to use grep in command line" and "what are some more ways to use the grep command". Shown below are the ChatGPT output for the commands I used. The top two outputs came from my first prompt and the bottom two outputs came from my second prompt. Since the code Chat GPT output was only for example, I only copied the command parts of the code (ie "grep -i"). I wrote the part of the code that required a pattern or a path to a file/directory. 
     
-    ![](untitled.png)
+    ![](Untitled.png)
  
