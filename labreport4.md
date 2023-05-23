@@ -1,6 +1,6 @@
 # Lab Report 4
 ## Step 4: 
-Keys Pressed: `ssh <Ctrl> v` I had my ieng6 account username on my clipboard so to login I typed ssh and then pased my username.
+Keys Pressed: `ssh <Ctrl> v` I had my ieng6 account username on my clipboard so to login I typed ssh and then pasted my username.
 ![](step2.png)
 
 ## Step 5: 
