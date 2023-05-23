@@ -1,10 +1,10 @@
 # Lab Report 4
 ## Step 4: 
-Keys Pressed: ` ssh <Ctrl> v ` I had my ieng6 account username on my clipboard so to login I typed ssh and then pased my username.
+Keys Pressed: `ssh <Ctrl> v` I had my ieng6 account username on my clipboard so to login I typed ssh and then pased my username.
 ![](step2.png)
 
 ## Step 5: 
-Keys Pressed: ` git clone <Ctrl> <V> cd l <tab> ` After forking the repository, I copied the ssh clone URL. To clone this in my ieng6 account, I typed git clone, then pasted the url. After this, I changed the current directory by using the command cd, typing l and then tab, which filled in the rest of lab7.
+Keys Pressed: `git clone <Ctrl> <V> cd l <tab>` After forking the repository, I copied the ssh clone URL. To clone this in my ieng6 account, I typed git clone, then pasted the url. After this, I changed the current directory by using the command cd, typing l and then tab, which filled in the rest of lab7.
 ![](step3.png)
 
 
