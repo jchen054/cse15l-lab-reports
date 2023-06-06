@@ -95,6 +95,9 @@ else
   echo ""
 fi
 ```
+Test and Grade Script Directory: 
+![directory](gradedirectory.png)
+
 
 Relevant Test in ListTestExamples.java
 
@@ -102,7 +105,7 @@ Relevant Test in ListTestExamples.java
 
 
 Buggy Code:
-On line 60, instead of mapping each number in the array to complement, it was mapped to i, the index of that number.
+On line 60, instead of mapping each number in the array to complement, it changed so that it was mapped to i, the index of that number.
 ![wrong code](wrongcode.png)
 Fixed Code:
 ![fixed](fixedcode.png)
@@ -110,10 +113,14 @@ Fixed Code:
 Outputs:
 
 Failure Output:
+In the wrong implementation of the method, each value in the array got mapped to its complement, meaning when storing the pair in the resulting list, the complement was passed as the index, and the accessed value was incorrect. This was why the test was failing and the output array had 2 pairs of numbers that did not add up to the target sum.
 
 ![aasfd](testwrong.png)
 
 Passing Output:
 
 ![fixed](testcorrect.png)
+
+## Reflection
+This quarter one of the most important things I learned was bash scripting. It was like learning another language, but it allowed me to automate what was previously repetitive command line arguments. I applied what I learned about bash script to both compile, run, and debug my PAs for another class, and it made the process much faster. 
 
