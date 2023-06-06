@@ -16,8 +16,7 @@ expected output, even though I doubled checked that it should be the correct out
 **Detail the failure-inducing input and context. That might mean any or all of the command you're running, a test case, command-line arguments, working directory, 
 even the last few commands you ran. Do your best to provide as much context as you can.**
 
-The failure inducing input is the input array for the junit test. I think the method I wrote is likely not iterating through the array and properly storing pairs of  
-numbers that add up the target sum, but I cannot find where in the method I made the mistake. I think my tests and grading script are correct. 
+The failure inducing input is the input array for the junit test. I think the method I wrote is likely not iterating through the array and properly storing pairs of numbers that add up the target sum, but I cannot find where in the method I made the mistake. I think my tests and grading script are correct. 
 
 ---
 ---
@@ -49,7 +48,7 @@ then
   echo 'ListExamples.java found'
 else
   echo 'ListExamples.java not found'
-  echo 'Score: 0/4'
+  echo 'Score: 0/5'
   exit
 fi
 
@@ -122,5 +121,5 @@ Passing Output:
 ![fixed](testcorrect.png)
 
 ## Reflection
-This quarter one of the most important things I learned was bash scripting. It was like learning another language, but it allowed me to automate what was previously repetitive command line arguments. I applied what I learned about bash script to both compile, run, and debug my PAs for another class, and it made the process much faster. 
+This quarter one of the most important things I learned was bash scripting. It was like learning another language, but it allowed me to automate what was previously repetitive command line arguments. I applied what I learned about bash script to compile, run, and debug my PAs for another class, and it made the process much faster. 
 
