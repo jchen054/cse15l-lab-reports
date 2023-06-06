@@ -96,3 +96,24 @@ else
 fi
 ```
 
+Relevant Test in ListTestExamples.java
+
+![test](thetest.png)
+
+
+Buggy Code:
+On line 60, instead of mapping each number in the array to complement, it was mapped to i, the index of that number.
+![wrong code](wrongcode.png)
+Fixed Code:
+![fixed](fixedcode.png)
+
+Outputs:
+
+Failure Output:
+
+![aasfd](testwrong.png)
+
+Passing Output:
+
+![fixed](testcorrect.png)
+
