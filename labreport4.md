@@ -27,5 +27,5 @@ This replaced the 1 in index1 to index2. `:wq` This allowed me to save the chang
 ## Step 9
 `git add Li <tab> . <tab>` The first and second tab autocompleted ListExamples.java. Then, the add command includes the changes I made to file to be commited and pushed to the  repository. `git commit -m "changed"` This commits the changes I made to the repository. `git push -u origin main` This pushed the changes I made to my github repository. Overall, this process took me about 6 minutes. 
 
-![]
+![](step9new.png)
  
